@@ -60,7 +60,7 @@ By installing or using this software, you agree to:
 ---
 
 **Developed by Payam Avarwand**  
-**Initial Release: November 2025**  
+**Initial Release: October 2025**  
 **Last Updated: November 2025**
 
 ---
