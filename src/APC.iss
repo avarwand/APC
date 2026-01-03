@@ -1,12 +1,12 @@
 #define MyAppName "APC"
-#define MyAppVersion "1.2"
+#define MyAppVersion "2.1"
 #define MyAppPublisher "Avarwand"
 #define MyAppURL "https://github.com/payam-avarwand/APC/releases/tag/APC"
-#define MyAppExeName "APC 1.2 Portable.exe"
+#define MyAppExeName "APC 2.1 Portable.exe"
 #define MyAppIcon "D:\Payam Avarwand\My Repos\GitHub\Word-Books\Code\Avarwand Software Production\14- APC\Visual\Thus_transform_1253.ico"
 #define MyVbsLauncher "APC_Launcher.vbs"
 #define MyAppIconName "Thus_transform_1253.ico"
-#define MyAppFileVersion "1.2.1.43"
+#define MyAppFileVersion "2.1.4.51"
 
 [Setup]
 AppId={{APC.com.yahoo@Avar_Payam}
@@ -21,7 +21,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\Avarwand\{#MyAppName}
 DefaultGroupName={#MyAppName}
 UninstallDisplayIcon={app}\lib\{#MyAppIconName}
-OutputDir="D:\Payam Avarwand\My Repos\GitHub\Avarwand\APC\installer"
+OutputDir="D:\Payam Avarwand\My Repos\GitHub\Avarwand\Software\APC\installer"
 OutputBaseFilename={#MyAppName}-{#MyAppVersion}-Setup
 SetupIconFile={#MyAppIcon}
 SolidCompression=yes
@@ -39,11 +39,11 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "D:\Payam Avarwand\My Repos\GitHub\Avarwand\APC\installer\APC 1.2 Portable\APC 1.2 Portable.exe"; DestDir: "{app}\lib"; Flags: ignoreversion
+Source: "D:\Payam Avarwand\My Repos\GitHub\Avarwand\Software\APC\installer\APC 2.1 Portable\APC 2.1 Portable.exe"; DestDir: "{app}\lib"; Flags: ignoreversion
 Source: "{#MyAppIcon}"; DestDir: "{app}\lib\_internal"; Flags: ignoreversion
 
 ; Install _internal under the lib folder
-Source: "D:\Payam Avarwand\My Repos\GitHub\Avarwand\APC\installer\APC 1.2 Portable\_internal\*"; DestDir: "{app}\lib\_internal"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\Payam Avarwand\My Repos\GitHub\Avarwand\Software\APC\installer\APC 2.1 Portable\_internal\*"; DestDir: "{app}\lib\_internal"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 ; VBS launcher
