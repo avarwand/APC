@@ -1,12 +1,12 @@
 #define MyAppName "APC"
 #define MyAppVersion "2.1"
 #define MyAppPublisher "Avarwand"
-#define MyAppURL "https://github.com/payam-avarwand/APC/releases/tag/APC"
+#define MyAppURL "https://github.com/payam-avarwand/APC/releases/edit/APC"
 #define MyAppExeName "APC 2.1 Portable.exe"
 #define MyAppIcon "D:\Payam Avarwand\My Repos\GitHub\Word-Books\Code\Avarwand Software Production\14- APC\Visual\Thus_transform_1253.ico"
 #define MyVbsLauncher "APC_Launcher.vbs"
 #define MyAppIconName "Thus_transform_1253.ico"
-#define MyAppFileVersion "2.1.4.51"
+#define MyAppFileVersion "2.1.15.8"
 
 [Setup]
 AppId={{APC.com.yahoo@Avar_Payam}
@@ -110,6 +110,3 @@ begin
     end;
   end;
 end;
-
-
-
