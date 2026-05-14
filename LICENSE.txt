@@ -13,7 +13,7 @@ You are granted a non-exclusive, non-transferable, worldwide license to install 
 - You may not use this software for any unlawful, malicious, or harmful purpose.
 
 **3. OWNERSHIP**  
-All rights, title, and interest, including all intellectual property rights in and to the software, are and shall remain the exclusive property of **Payam Avarwand** and **Avarwand**.
+All rights, title, and interest, including all intellectual property rights in and to the software, are and shall remain the exclusive property of **Avarwand**.
 
 **4. DISCLAIMER OF WARRANTY**  
 This software is provided **"as is"** without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose.  

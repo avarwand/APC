@@ -83,7 +83,7 @@ Convert from **13 different image formats**:
 
 ### Option 2: Standalone Executable (Easiest)
 
-1. Download `APC.exe` from [Releases](https://github.com/payam-avarwand/APC/releases)
+1. Download `APC.exe` from [Releases](https://github.com/avarwand/APC/releases)
 2. Run directly – no installation needed
 3. All dependencies included
 
@@ -201,7 +201,7 @@ Convert from **13 different image formats**:
 This is a freeware project primarily maintained by the author. 
 
 **Suggestions welcome via:**
-- Email: payam_avar@yahoo.com
+- Email: avarwand@yahoo.com
 
 ---
 
@@ -211,7 +211,7 @@ This software is released as **freeware** under the following terms:
 
 ### END USER LICENSE AGREEMENT (EULA)
 
-This software is provided by **Payam Avarwand**, free of charge for personal and commercial use.
+This software is provided by **Avarwand**, free of charge for personal and commercial use.
 
 **By installing or using this software, you agree to:**
 - Use the software in compliance with this EULA
@@ -240,20 +240,13 @@ This software is provided by **Payam Avarwand**, free of charge for personal and
 - Basic GUI
 - Quality 100 output
 
----
-
-## 👨‍💻 Developer
-
-**Avarwand**  
-Software Developer  
-Email: payam_avar@yahoo.com  
 
 ---
 
 ## 📞 Support & Contact
 
-**Email**: payam_avar@yahoo.com  
-**GitHub**: https://github.com/payam-avarwand/APC/releases/tag/APC
+**Email**: avarwand@yahoo.com  
+**GitHub**: https://github.com/avarwand/APC/releases/tag/APC
 
 ---
 
@@ -265,8 +258,7 @@ This software is protected by copyright law. Unauthorized reproduction or distri
 
 **Initial Release**: October 2025  
 **Current Version**: 2.1 (January 2026)  
-**Last Updated**: January 03, 2026
+**Last Updated**: January 2026
 
 ---
 
-**Made with ❤️ by P. Avarwand**
