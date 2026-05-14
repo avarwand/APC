@@ -1,4 +1,4 @@
-# APC (Avarwand Picture Converter)
+# Avarwand Picture Converter (APC)
 
 A **fast, elegant, Python-based GUI tool** that converts modern and legacy image formats to **JPEG, PNG, BMP, WebP, or TIFF** – with **100% quality** and **zero hassle**.
 
