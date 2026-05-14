@@ -1,12 +1,12 @@
 #define MyAppName "APC"
 #define MyAppVersion "2.1"
 #define MyAppPublisher "Avarwand"
-#define MyAppURL "https://github.com/payam-avarwand/APC/releases/edit/APC"
+#define MyAppURL "https://github.com/avarwand/APC/releases/tag/APC"
 #define MyAppExeName "APC 2.1 Portable.exe"
-#define MyAppIcon "D:\Payam Avarwand\My Repos\GitHub\Word-Books\Code\Avarwand Software Production\14- APC\Visual\Thus_transform_1253.ico"
+#define MyAppIcon "D:\Payam Avarwand\My Repos\GitHub\Word-Books\Code\Avarwand Software Production\14- APC\Visual\APC Logo.ico"
 #define MyVbsLauncher "APC_Launcher.vbs"
-#define MyAppIconName "Thus_transform_1253.ico"
-#define MyAppFileVersion "2.1.15.8"
+#define MyAppIconName "APC Logo.ico"
+#define MyAppFileVersion "2.1.15.9"
 
 [Setup]
 AppId={{APC.com.yahoo@Avar_Payam}
@@ -78,11 +78,11 @@ begin
     SaveStringToFile(VbsPath, VbsContent, False);
 
     // make the script hide and read-only
-    Exec('cmd.exe', '/C attrib +h +r +s "' + ExpandConstant('{app}\lib\{#MyAppExeName}') + '"', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
-    // Protect all files in the lib folder
-    Exec('cmd.exe', '/C attrib +h +r +s "' + ExpandConstant('{app}\lib\*.*') + '" /S', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
+    Exec('cmd.exe', '/C attrib +h +r "' + ExpandConstant('{app}\lib\{#MyAppExeName}') + '"', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
+
+
     // Protect the lib folder itself
-    Exec('cmd.exe', '/C attrib +h +r +s "' + ExpandConstant('{app}\lib') + '"', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
+    Exec('cmd.exe', '/C attrib +h "' + ExpandConstant('{app}\lib') + '"', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
 
     // Check if VBS file was created
     if not FileExists(VbsPath) then
@@ -110,3 +110,4 @@ begin
     end;
   end;
 end;
+
