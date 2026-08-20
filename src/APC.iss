@@ -3,10 +3,11 @@
 #define MyAppPublisher "Avarwand"
 #define MyAppURL "https://github.com/avarwand/APC/releases/tag/APC"
 #define MyAppExeName "APC 2.1 Portable.exe"
-#define MyAppIcon "D:\Payam Avarwand\My Repos\GitHub\Word-Books\Code\Avarwand Software Production\14- APC\Visual\APC Logo.ico"
+#define MyAppIcon "D:\Payam Avarwand\My Repos\GitHub\Word-Books\Code\Avarwand Software Production\15- APC\Visual\APC Logo.ico"
 #define MyVbsLauncher "APC_Launcher.vbs"
 #define MyAppIconName "APC Logo.ico"
 #define MyAppFileVersion "2.1.15.9"
+#define MyLicenseFile "D:\Payam Avarwand\My Repos\GitHub\Avarwand\Software\APC\installer\APC 2.1 Portable\APC LICENSE.txt"
 
 [Setup]
 AppId={{APC.com.yahoo@Avar_Payam}
@@ -24,6 +25,7 @@ UninstallDisplayIcon={app}\lib\{#MyAppIconName}
 OutputDir="D:\Payam Avarwand\My Repos\GitHub\Avarwand\Software\APC\installer"
 OutputBaseFilename={#MyAppName}-{#MyAppVersion}-Setup
 SetupIconFile={#MyAppIcon}
+LicenseFile={#MyLicenseFile}
 SolidCompression=yes
 WizardStyle=modern
 PrivilegesRequiredOverridesAllowed=dialog
@@ -110,4 +112,3 @@ begin
     end;
   end;
 end;
-

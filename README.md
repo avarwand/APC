@@ -196,69 +196,39 @@ Convert from **13 different image formats**:
 
 ---
 
-## 🤝 Contributing
+## License
 
-This is a freeware project primarily maintained by the author. 
+**APC is freeware**, released under a custom End User License Agreement (EULA) by **Avarwand**.
 
-**Suggestions welcome via:**
-- Email: avarwand@yahoo.com
+In short, you are free to:
 
----
+* **Use** APC free of charge, for both personal and commercial purposes
+* **Share** APC with anyone, redistributing, hosting, mirroring, and promoting it is welcome, as long as it is passed on **complete and unmodified**, **free of charge**, and with clear credit to **Avarwand**
 
-## 📄 License
+And you may not:
 
-This software is released as **freeware** under the following terms:
+* Sell APC, monetize access to it, or lock it behind paywalls, donations, surveys, registration walls, or paid bundles
+* Reverse engineer, decompile, or modify it (except to the limited extent permitted by applicable law)
+* Claim it as your own work, or remove its copyright and branding notices
 
-### END USER LICENSE AGREEMENT (EULA)
+APC is provided **"as is"**, without warranty of any kind.
 
-This software is provided by **Avarwand**, free of charge for personal and commercial use.
-
-**By installing or using this software, you agree to:**
-- Use the software in compliance with this EULA
-- Not reverse engineer, decompile, or modify the software
-- Not redistribute or claim ownership of the software
-- Accept the software "as is" without warranties of any kind
-
-**The software is provided "AS IS"** without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.
-
-*For full EULA terms, see the LICENSE file in the distribution.*
+*This summary is for convenience only. The legally binding terms are in the [LICENSE](LICENSE.md) file included with every release and in this repository.*
 
 ---
 
-## 📜 Version History
-
-### Version 2.1 - January 2026
-- Added 11 new input formats
-- Multi-page TIFF extraction
-- 16-bit RAW processing
-- Enhanced info dialog
-- Maximum quality settings for all formats
-
-### Version 1.0 - October 2025
-- Initial release
-- HEIC and WebP conversion
-- Basic GUI
-- Quality 100 output
-
+**Developed by Avarwand**  
+**Latest Version: February 2026**
+**Initial Release: October 2025**  
 
 ---
 
-## 📞 Support & Contact
+## Contact
 
-**Email**: avarwand@yahoo.com  
-**GitHub**: https://github.com/avarwand/APC/releases/tag/APC
+**Avarwand Support**  
+📧 [avarwand@yahoo.com](mailto:avarwand@yahoo.com)  
+🌐 [github.com/avarwand](https://github.com/avarwand/)
 
----
-
-## ⚖️ Copyright
-
-**© 2025-2026 Avarwand. All rights reserved.**
-
-This software is protected by copyright law. Unauthorized reproduction or distribution of this software, or any portion of it, may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law.
-
-**Initial Release**: October 2025  
-**Current Version**: 2.1 (January 2026)  
-**Last Updated**: January 2026
+© 2025–2026 Avarwand. All rights reserved.
 
 ---
-
