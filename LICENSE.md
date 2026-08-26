@@ -5,7 +5,7 @@
 
 This End User License Agreement (the "Agreement") is a legal agreement between you, either an individual or a legal entity ("You"), and **Avarwand** (independent software developer, the "Author") for the software product **"Avarwand Picture Converter"** ("APC" or the "Software"), including its executable files and any accompanying documentation.
 
-The Software is a **freeware** tool designed to batch convert image files between different formats. It is distributed in compiled executable (EXE) form only, as an installer and as a portable version. The source code is not published.
+The Software is a **freeware** tool designed to batch convert pictures between formats and to compress pictures to a target file size. It is distributed in compiled executable (EXE) form only, as an installer and as a portable version. The source code is not published.
 
 **By installing, copying, or otherwise using the Software, You agree to be bound by the terms of this Agreement. If You do not agree to these terms, do not install or use the Software.**
 
@@ -30,7 +30,7 @@ The Author welcomes the free sharing of the Software. Any person, organization, 
 5. **No deceptive or harmful distribution.** The Software must not be distributed together with malware, adware, or unwanted bundled software, nor through deceptive "download wrappers," pay-per-install installers, or similar schemes.
 Ordinary advertising on a hosting or promoting platform (for example, an ad-supported download website or a monetized video review) is permitted, provided that the Software itself remains free of charge and that the advertising does not gate or condition access to it (see condition 3 above).
  
-Where reasonably possible, please link to the official source: [github.com/avarwand/APC](https://github.com/avarwand/APC/releases/tag/APC)
+Where reasonably possible, please link to the official source: [github.com/avarwand](https://github.com/avarwand/)
 
 ---
 
@@ -55,7 +55,7 @@ The APC icon and branding elements are original creations of Avarwand.
 
 ### 5. Name and Trademarks
 
-"Avarwand", "Avarwand Picture Converter", and any associated logos identify the Author and the Software. This Agreement does not grant You any right to use these names or logos as Your own trademarks, brand names, product names, or product identities.
+"Avarwand", "Avarwand Picture Converter", "APC", and any associated logos identify the Author and the Software. This Agreement does not grant You any right to use these names or logos as Your own trademarks, brand names, product names, or product identities.
 
 You may use these names solely to truthfully identify, describe, and promote unmodified copies of the Software, provided that such use does not suggest sponsorship, endorsement, or affiliation by the Author and is not likely to cause confusion.
 
@@ -77,7 +77,7 @@ The Software runs locally on Your device. It does not collect, store, or transmi
 
 To the maximum extent permitted by applicable law, the Software is provided **"AS IS"**, without warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. The Author does not warrant that the Software will be error-free or uninterrupted.
 
-You use the Software at Your own risk. In particular, image conversion carries an inherent risk of data loss or quality degradation, please keep backups of your original files.
+You use the Software at Your own risk. In particular, batch conversion and compression of pictures can, in rare cases, produce incomplete or defective output files, and compressing pictures to a smaller file size permanently reduces the quality of the resulting copies; please keep backups of important pictures.
 
 ---
 

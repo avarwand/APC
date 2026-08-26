@@ -1,198 +1,125 @@
 # Avarwand Picture Converter (APC)
+A **powerful, modern GUI tool** for **batch converting pictures** between 15 input and 5 output formats, and for **compressing pictures to a target file size**, with precision, speed, and safety.
 
-A **fast, elegant, Python-based GUI tool** that converts modern and legacy image formats to **JPEG, PNG, BMP, WebP, or TIFF** – with **100% quality** and **zero hassle**.
-
-**No command line. No quality loss. No complexity.**
-
----
-
-## 🚀 Main Features
-
-### Universal Format Support
-Convert from **13 different image formats**:
-
-**Standard Formats:**
-- **HEIC/HEIF** → JPEG / PNG / BMP / WebP / TIFF
-- **WebP** → JPEG / PNG / BMP / TIFF
-- **AVIF** → JPEG / PNG / BMP / WebP / TIFF
-- **JXL (JPEG XL)** → JPEG / PNG / BMP / WebP / TIFF
-- **TIFF** → JPEG / PNG / BMP / WebP (with multi-page extraction)
-
-**RAW Camera Formats:**
-- **ARW** (Sony) → JPEG / PNG / BMP / WebP / TIFF
-- **DNG** (Adobe) → JPEG / PNG / BMP / WebP / TIFF
-- **ORF** (Olympus) → JPEG / PNG / BMP / WebP / TIFF
-- **CR2** (Canon) → JPEG / PNG / BMP / WebP / TIFF
-
-**HDR/Scientific Formats:**
-- **EXR** (OpenEXR) → JPEG / PNG / BMP / WebP / TIFF
-- **FITS** (Astronomy) → JPEG / PNG / BMP / WebP / TIFF
-
-### Core Features
-- ✨ **One-click batch conversion** – select 1 or 1000 files at once
-- 🎯 **Maximum quality output** – Quality=100, no subsampling, no compression artifacts
-- 📄 **Multi-page TIFF extraction** – Each page saved as separate file
-- 🎨 **16-bit RAW processing** – Professional-grade color depth before conversion
-- 🖥️ **Dark-mode UI** – Modern, clean interface with perfect alignment
-- 📊 **Real-time progress** – Live status bar and file counter
-- 🎭 **Custom icon** – Embedded base64 icon, no external files needed
-- 📁 **Smart output** – Defaults to Desktop, easily customizable
-- 🔧 **Auto-dependency installer** – Libraries installed automatically on first run
-- 🪟 **Centered window** – 700×600 fixed size, auto-centers on screen
+No command line . No risk . Full control
 
 ---
 
-## 💎 Quality Settings
-
-**Maximum quality for every format:**
-
-| Output Format | Settings | Quality Level |
-|--------------|----------|---------------|
-| **JPEG** | Quality 100, no subsampling (4:4:4), optimize=False | 99.9% |
-| **PNG** | compress_level=0 (no compression) | 100% |
-| **WebP** | Quality 100, method 6 | 99.5% |
-| **TIFF** | Adobe Deflate (lossless compression) | 100% |
-| **BMP** | Uncompressed | 100% |
-
-**RAW Processing:** 16-bit workflow → 8-bit conversion for maximum color fidelity
+## What's New in v2.3
+- **Import rectangle**: click to browse, or simply **drag & drop** your pictures into the app
+- **Mixed-format import**: bring JPEGs, PNGs, RAW shots and more in together — every file is recognized automatically
+- **JPEG, PNG and BMP** now accepted as input formats (**15 input formats** in total)
+- **Imported-files list**: every picture listed with its complete name — select one, several, or all and take them out (**Remove selected** / **Clear input**)
+- **Compression Mode**: shrink same-format pictures to a chosen maximum file size with the new **target-size slider**
+- Conversion always at the **best possible quality** of the target format, transparency preserved
+- Redesigned, scrollable **Info window**
 
 ---
 
-## 📋 System Requirements
-
-### Minimum (Basic Formats)
-- **OS**: Windows 10/11, Linux (Ubuntu 20.04+), macOS 10.15+
-- **Python**: 3.8 or higher
-- **RAM**: 2 GB
-- **Dependencies**: `Pillow`, `pillow-heif`
-- **Formats Available**: HEIC, HEIF, WebP, TIFF (4 formats)
-
-### Recommended (All Formats)
-- **OS**: Windows 10/11 (64-bit)
-- **Python**: 3.9+
-- **RAM**: 4 GB (8 GB for large RAW files)
-- **Dependencies**: See [Installation](#installation) section
-- **Formats Available**: All 13 formats
-
-### Standalone Executable
-- **No Python required** – Runs on any compatible Windows system
-- **No installation** – Just download and run
-- **All dependencies bundled** – 150-200 MB single file
+## Main Features
+- **Batch convert pictures** between formats in one operation  
+- **15 input formats**: standard, RAW camera, and HDR/scientific pictures  
+- **5 output formats**: JPEG, PNG, BMP, WebP, TIFF  
+- **Import by click or drag & drop**, any mix of formats at once  
+- **Automatic format recognition** for every single file  
+- **File list with multi-select removal**: full control over what gets processed  
+- **Compression Mode**: reduce pictures to a maximum file size, at the best quality that fits  
+- **Best possible quality, always**: lossless where the format allows it, transparency preserved  
+- **Multi-page TIFF**: every page saved as its own picture  
+- **16-bit RAW processing** for maximum quality  
+- **Background processing** with progress bar: the window never freezes  
+- **Dark-mode GUI** with clean layout  
+- **Fully GUI-based**: no CLI knowledge required  
+- **Works on large batches** with hundreds of pictures  
 
 ---
 
-### Option 2: Standalone Executable (Easiest)
+## Input Formats (15)
 
-1. Download `APC.exe` from [Releases](https://github.com/avarwand/APC/releases)
-2. Run directly – no installation needed
-3. All dependencies included
+- **Standard**: JPEG, PNG, BMP, WebP, TIFF, HEIC, HEIF, AVIF, JXL
+- **RAW Camera**: ARW, DNG, ORF, CR2
+- **HDR / Scientific**: EXR, FITS
 
----
-
-## 🎯 How to Use
-
-
-### Converting Images
-
-1. **Select Source Format** from dropdown (HEIC, WebP, AVIF, etc.)
-2. Click **Browse** → select your image(s)
-   - Multi-select supported (Ctrl+Click or Shift+Click)
-   - Accepts any number of files
-3. **Choose Output Format** (JPEG, PNG, BMP, WebP, TIFF)
-4. **Set Output Path** (optional – defaults to Desktop)
-5. Click **Start Conversion**
-6. Watch the progress bar → **Done!**
-
-### Special Features
-
-**Multi-Page TIFF:**
-- Automatically detects pages
-- Saves each page as: `filename_page_1.png`, `filename_page_2.png`, etc.
-- Single-page TIFFs saved normally
-
-**RAW Files:**
-- 16-bit processing with camera white balance
-- Automatic brightness adjustment
-- Professional color accuracy
+All accepted formats are shown directly on the import rectangle, and any mix of them can be imported together.
 
 ---
 
-## 🎨 User Interface
+## Output Formats & Quality
 
-- **Window Size**: 700×600 pixels (fixed, non-resizable)
-- **Position**: Auto-centers on screen
-- **Color Scheme**: Dark mode (#2a2a2a background)
-- **Font**: Segoe UI (Windows), system default (Linux/Mac)
-- **Components**:
-  - Source format dropdown
-  - Output format dropdown
-  - File browser with counter
-  - Output path selector
-  - Progress bar with percentage
-  - Live status label
-  - Info dialog with format details
+Conversion always uses the highest possible quality of the target format:
+
+- **JPEG**: Quality 100, no chroma subsampling (4:4:4)
+- **PNG**: Lossless, transparency preserved
+- **WebP**: Lossless, transparency preserved
+- **TIFF**: Lossless Adobe Deflate compression
+- **BMP**: Uncompressed (transparency flattened on white)
+
+Multi-page TIFF inputs are split automatically: every page becomes its own file. RAW camera pictures are developed with 16-bit processing before saving.
 
 ---
 
-## 📦 Available Formats
+## Compression Mode
 
-### Always Available (with Pillow)
-✅ **WebP** input and output  
-✅ **TIFF** input and output (multi-page support)
+Shrink pictures to a maximum file size **without changing their format**:
 
-### Optional (Install as needed)
-
-| Format | Library | Install Command |
-|--------|---------|----------------|
-| HEIC/HEIF | pillow-heif | `pip install pillow-heif` |
-| AVIF | pillow-avif-plugin | `pip install pillow-avif-plugin` |
-| JXL | pillow-jxl-plugin | `pip install pillow-jxl-plugin` |
-| RAW (ARW, DNG, ORF, CR2) | rawpy | `pip install rawpy` |
-| EXR | OpenEXR | `pip install OpenEXR` |
-| FITS | astropy | `pip install astropy` |
-
-**Note**: The app will show which formats are available based on installed libraries.
+- Activates automatically when **all imported pictures already have the chosen output format**: *Start Conversion* switches off, **Start Compression** and the **size slider** switch on
+- The **slider sets the maximum file size per picture**: its range runs from the smallest reachable size of the biggest imported picture up to its current size
+- APC automatically finds the **best quality that still fits the target** for every single picture
+- Format-specific compression: **JPEG / WebP** by quality search, **TIFF** by JPEG-in-TIFF, **PNG** by color reduction, **BMP** by bit-depth reduction
+- Results are saved with a **"_compressed"** suffix: **your originals stay untouched**
+- Pictures already below the target are copied unchanged; pictures that cannot reach the target are saved at their minimum possible size — the summary after the run reports both
 
 ---
 
-## 📊 Performance
+## How to Use
 
-| Operation | Speed | Notes |
-|-----------|-------|-------|
-| HEIC/WebP/AVIF | Fast | ~1-2 seconds per file |
-| RAW formats | Moderate | ~5-10 seconds per file (CPU-intensive) |
-| Multi-page TIFF | Fast | ~1 second per page |
-| Large files (50MP+) | Moderate | Depends on RAM |
-| Batch (100 files) | Automatic | Progress bar shows status |
-
-**RAM Usage**: Approximately 200-500 MB per 24MP image during processing
+1. Download the desired Version
+2. Unzip it > Install it (_for the installer version_)
+3. **Import pictures**: click the import rectangle or drag & drop files onto it — mixed formats welcome
+4. Fine-tune the list if needed: **Remove selected** entries or **Clear input**
+5. Choose the **Output Format** and the **Output Path**
+6. Click **Start Conversion** — or, if all pictures already have the output format, set the **size slider** and click **Start Compression**
+7. Watch the progress → **Done!**
 
 ---
 
-## 🆘 Troubleshooting
+## Safety Notes
 
-### Format Not Available
-**Problem**: Format missing from dropdown  
-**Solution**: Install the required library (see table above)
+* Conversion and compression **never modify or delete your originals**: new files are always written to the output folder
+* Compressed pictures get a **"_compressed"** suffix, so nothing is ever overwritten
+* Unsupported files are **skipped and reported**, never touched
+* A **summary after every run** tells you exactly what was converted, compressed, copied unchanged, or saved at minimum size
+* Designed to minimize accidental changes
 
-### Conversion Fails
-**Problem**: "Error converting file" message  
-**Solution**: 
-- Check file isn't corrupted
-- Ensure enough disk space
-- Try converting one file at a time
+---
 
-### Slow RAW Conversion
-**Problem**: RAW files converting slowly  
-**Solution**: This is normal – RAW processing is CPU-intensive
+## Use Cases
 
-### Icon Not Showing
-**Problem**: No icon in title bar  
-**Solution**: Icon generation failed – app works normally, just no icon
+* Converting phone photos (HEIC / HEIF) for maximum compatibility
+* **Shrinking pictures under email or upload size limits**
+* Preparing web images: small files at the best quality that fits
+* Developing RAW camera shots (ARW, DNG, ORF, CR2) into JPEG or TIFF
+* Converting astro (FITS) and HDR (EXR) images into standard formats
+* **Splitting multi-page TIFF scans into single pictures**
+* Normalizing mixed picture libraries into one format
+* Archiving pictures in lossless formats
 
-### Executable Too Large
-**Problem**: .exe is 200+ MB  
-**Solution**: This is normal with all dependencies bundled
+---
+
+## System Requirements
+- **OS**: Windows 10 / Windows 11  
+
+No external dependencies required.
+
+---
+
+## Contributing
+
+This project is released as **freeware**.
+
+While primarily maintained by the author, suggestions, bug reports, and improvement ideas are welcome via email.
+
+Pull requests are currently not accepted.
 
 ---
 
@@ -218,7 +145,7 @@ APC is provided **"as is"**, without warranty of any kind.
 ---
 
 **Developed by Avarwand**  
-**Latest Version: February 2026**
+**Latest Version: August 2026**
 **Initial Release: October 2025**  
 
 ---
