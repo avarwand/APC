@@ -8,7 +8,7 @@ No command line . No risk . Full control
 ## What's New in v2.4
 - **3 more input formats**: **Canon CR3** and **Nikon NEF** RAW pictures plus **JFIF** (**18 input formats** in total)
 - **JFIF handled the smart way**: shown as its own format, but compressed like the JPEG it technically is
-- **Skipped files now show their format**: unsupported imports appear as gray counters, e.g. **XXX (skipped)** — you instantly see *what* was rejected, not just how many
+- **Skipped files now show their format**: unsupported imports appear as gray counters, e.g. **XXX (skipped)**، you instantly see *what* was rejected, not just how many
 - Folders and files without extension are reported too: **FOLDER (skipped)** / **NO EXT (skipped)**
 
 ---
@@ -67,7 +67,7 @@ Shrink pictures to a maximum file size **without changing their format**:
 - Format-specific compression: **JPEG / WebP** by quality search, **TIFF** by JPEG-in-TIFF, **PNG** by color reduction, **BMP** by bit-depth reduction
 - **JFIF pictures count as JPEG here**: with JPEG as output they enter Compression Mode and use the JPEG engine
 - Results are saved with a **"_compressed"** suffix: **your originals stay untouched**
-- Pictures already below the target are copied unchanged; pictures that cannot reach the target are saved at their minimum possible size — the summary after the run reports both
+- Pictures already below the target are copied unchanged; pictures that cannot reach the target are saved at their minimum possible size، the summary after the run reports both
 
 ---
 
@@ -75,10 +75,10 @@ Shrink pictures to a maximum file size **without changing their format**:
 
 1. Download the desired Version
 2. Unzip it > Install it (_for the installer version_)
-3. **Import pictures**: click the import rectangle or drag & drop files onto it — mixed formats welcome
-4. Fine-tune the list if needed: click a **format counter** to select a whole format, then **Remove selected** — or **Clear input**
+3. **Import pictures**: click the import rectangle or drag & drop files onto it، mixed formats welcome
+4. Fine-tune the list if needed: click a **format counter** to select a whole format, then **Remove selected**، or **Clear input**
 5. Choose the **Output Format** and the **Output Path**
-6. Click **Start Conversion** — or, if all pictures already have the output format, set the **size slider** and click **Start Compression**
+6. Click **Start Conversion**، or, if all pictures already have the output format, set the **size slider** and click **Start Compression**
 7. Watch the progress → **Done!**
 
 ---
