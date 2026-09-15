@@ -1,27 +1,37 @@
-# Avarwand Picture Converter (APC)
-A **powerful, modern GUI tool** for **batch converting pictures** between 18 input and 5 output formats, and for **compressing pictures to a target file size**, with precision, speed, and safety.
+<div align="center">
 
-No command line . No risk . Full control
+# Avarwand Picture Converter 2.5.0
+
+</div>
+
+A **powerful, modern GUI tool** for **batch converting pictures** between 20 input and 7 output formats, and for **compressing pictures to a target file size**, with precision, speed, and safety.
+
+> _No command line | No risk | Full control_
 
 ---
 
-## What's New in v2.4
-- **3 more input formats**: **Canon CR3** and **Nikon NEF** RAW pictures plus **JFIF** (**18 input formats** in total)
-- **JFIF handled the smart way**: shown as its own format, but compressed like the JPEG it technically is
-- **Skipped files now show their format**: unsupported imports appear as gray counters, e.g. **XXX (skipped)**، you instantly see *what* was rejected, not just how many
-- Folders and files without extension are reported too: **FOLDER (skipped)** / **NO EXT (skipped)**
+## What's New in v2.5
+- **TGA and DDS** join as input **and** output formats (**20 input / 7 output formats** in total)
+- **TGA**: read and written **losslessly** (RLE) with a full alpha channel, the classic game-pipeline format
+- **DDS**: all common **DXT/BC texture variants** are read; written **uncompressed at maximum quality**
+- **Import whole folders**: drop one or many folders, they are **searched to any depth**, and every supported picture inside is imported; only files are ever listed, never folders
+- **Nothing gets overwritten anymore**: if two results would share a name (easy with nested folders), APC appends **_2, _3, ...** automatically
+- **Compression Mode** covers the new formats too: **TGA** by RLE + color reduction, **DDS** by block compression (uncompressed → DXT5 → DXT1)
+- **WebP lossless is now exact**: even the invisible colors under fully transparent pixels are preserved, game engines sample them
 
 ---
 
 ## Main Features
 - **Batch convert pictures** between formats in one operation  
-- **18 input formats**: standard, RAW camera, and HDR/scientific pictures  
-- **5 output formats**: JPEG, PNG, BMP, WebP, TIFF  
+- **20 input formats**: standard, RAW camera, HDR/scientific, and game-texture pictures  
+- **7 output formats**: JPEG, PNG, BMP, WebP, TIFF, TGA, DDS  
 - **Import by click or drag & drop**, any mix of formats at once  
+- **Whole folders welcome**: dropped folders are searched to any depth, only the pictures inside are listed  
 - **Automatic format recognition** for every single file  
 - **File list with multi-select removal**: full control over what gets processed  
 - **Per-format counters** above the list: one click selects every picture of that format (Ctrl-click adds to the selection)  
 - **Skipped files reported with their format** as gray counters, e.g. *XXX (skipped)*  
+- **No output is ever overwritten**: a taken name automatically becomes *name_2*, *name_3*, ...  
 - **Compression Mode**: reduce pictures to a maximum file size, at the best quality that fits  
 - **Best possible quality, always**: lossless where the format allows it, transparency preserved  
 - **Multi-page TIFF**: every page saved as its own picture  
@@ -33,11 +43,12 @@ No command line . No risk . Full control
 
 ---
 
-## Input Formats (18)
+## Input Formats (20)
 
 - **Standard**: JPEG, JFIF, PNG, BMP, WebP, TIFF, HEIC, HEIF, AVIF, JXL
 - **RAW Camera**: ARW, CR2, CR3, DNG, NEF, ORF
 - **HDR / Scientific**: EXR, FITS
+- **Game / Texture**: DDS, TGA
 
 All accepted formats are shown directly on the import rectangle, and any mix of them can be imported together.
 
@@ -49,9 +60,11 @@ Conversion always uses the highest possible quality of the target format:
 
 - **JPEG**: Quality 100, no chroma subsampling (4:4:4)
 - **PNG**: Lossless, transparency preserved
-- **WebP**: Lossless, transparency preserved
+- **WebP**: Lossless, transparency preserved (exact, even colors under fully transparent pixels are kept)
 - **TIFF**: Lossless Adobe Deflate compression
 - **BMP**: Uncompressed (transparency flattened on white)
+- **TGA**: Lossless RLE compression, transparency preserved
+- **DDS**: Uncompressed at maximum quality (no mipmaps, for final game textures use a dedicated texture tool)
 
 Multi-page TIFF inputs are split automatically: every page becomes its own file. RAW camera pictures are developed with 16-bit processing before saving.
 
@@ -66,8 +79,9 @@ Shrink pictures to a maximum file size **without changing their format**:
 - APC automatically finds the **best quality that still fits the target** for every single picture
 - Format-specific compression: **JPEG / WebP** by quality search, **TIFF** by JPEG-in-TIFF, **PNG** by color reduction, **BMP** by bit-depth reduction
 - **JFIF pictures count as JPEG here**: with JPEG as output they enter Compression Mode and use the JPEG engine
+- **TGA**: RLE + color reduction, **DDS**: uncompressed → DXT5 → DXT1
 - Results are saved with a **"_compressed"** suffix: **your originals stay untouched**
-- Pictures already below the target are copied unchanged; pictures that cannot reach the target are saved at their minimum possible size، the summary after the run reports both
+- Pictures already below the target are copied unchanged; pictures that cannot reach the target are saved at their minimum possible size, the summary after the run reports both
 
 ---
 
@@ -75,10 +89,10 @@ Shrink pictures to a maximum file size **without changing their format**:
 
 1. Download the desired Version
 2. Unzip it > Install it (_for the installer version_)
-3. **Import pictures**: click the import rectangle or drag & drop files onto it، mixed formats welcome
-4. Fine-tune the list if needed: click a **format counter** to select a whole format, then **Remove selected**، or **Clear input**
+3. **Import pictures**: click the import rectangle or drag & drop files **or whole folders** onto it, mixed formats welcome, nested folders are searched completely
+4. Fine-tune the list if needed: click a **format counter** to select a whole format, then **Remove selected**, or **Clear input**
 5. Choose the **Output Format** and the **Output Path**
-6. Click **Start Conversion**، or, if all pictures already have the output format, set the **size slider** and click **Start Compression**
+6. Click **Start Conversion**, or, if all pictures already have the output format, set the **size slider** and click **Start Compression**
 7. Watch the progress → **Done!**
 
 ---
@@ -86,7 +100,8 @@ Shrink pictures to a maximum file size **without changing their format**:
 ## Safety Notes
 
 * Conversion and compression **never modify or delete your originals**: new files are always written to the output folder
-* Compressed pictures get a **"_compressed"** suffix, so nothing is ever overwritten
+* Compressed pictures get a **"_compressed"** suffix
+* **Nothing is ever overwritten**: if an output name is already taken, APC appends *_2, _3, ...* automatically
 * Unsupported files are **skipped and reported with their format**, never touched
 * A **summary after every run** tells you exactly what was converted, compressed, copied unchanged, or saved at minimum size
 * Designed to minimize accidental changes
@@ -100,6 +115,9 @@ Shrink pictures to a maximum file size **without changing their format**:
 * Preparing web images: small files at the best quality that fits
 * Developing RAW camera shots (Sony ARW, Canon CR2/CR3, Adobe DNG, Nikon NEF, Olympus ORF) into JPEG or TIFF
 * Converting astro (FITS) and HDR (EXR) images into standard formats
+* **Extracting game textures**: DDS files → PNG with transparency, ready to view and edit
+* Writing TGA textures for game-engine and 3D pipelines
+* **Converting a whole nested picture folder in one drop**
 * **Splitting multi-page TIFF scans into single pictures**
 * Normalizing mixed picture libraries into one format
 * Archiving pictures in lossless formats
@@ -107,6 +125,7 @@ Shrink pictures to a maximum file size **without changing their format**:
 ---
 
 ## System Requirements
+
 - **OS**: Windows 10 / Windows 11  
 
 No external dependencies required.
@@ -145,7 +164,7 @@ APC is provided **"as is"**, without warranty of any kind.
 ---
 
 **Developed by Avarwand**  
-**Latest Version: August 2026**
+**Latest Version: September 2026**
 **Initial Release: October 2025**  
 
 ---

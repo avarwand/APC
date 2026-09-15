@@ -1,12 +1,12 @@
 #define MyAppName "APC"
-#define MyAppVersion "2.4"
+#define MyAppVersion "2.5"
 #define MyAppPublisher "Avarwand"
 #define MyAppURL "https://github.com/avarwand/APC/releases/tag/APC"
-#define MyAppExeName "APC 2.4 Portable.exe"
+#define MyAppExeName "APC 2.5 Portable.exe"
 #define MyAppIcon "D:\Payam Avarwand\My Repos\GitHub\Word-Books\Code\Avarwand Software Production\15- APC\Visual\APC Logo.ico"
 #define MyVbsLauncher "APC_Launcher.vbs"
 #define MyAppIconName "APC Logo.ico"
-#define MyAppFileVersion "2.4.6.3"
+#define MyAppFileVersion "2.5.0.1"
 #define MyLicenseFile "D:\Payam Avarwand\My Repos\GitHub\Avarwand\Software\APC\installer\LICENSE.txt"
 
 [Setup]
@@ -41,11 +41,11 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "D:\Payam Avarwand\My Repos\GitHub\Avarwand\Software\APC\installer\APC 2.4 Portable\APC 2.4 Portable.exe"; DestDir: "{app}\lib"; Flags: ignoreversion
+Source: "D:\Payam Avarwand\My Repos\GitHub\Avarwand\Software\APC\installer\APC 2.5 Portable\APC 2.5 Portable.exe"; DestDir: "{app}\lib"; Flags: ignoreversion
 Source: "{#MyAppIcon}"; DestDir: "{app}\lib\_internal"; Flags: ignoreversion
 
 ; Install _internal under the lib folder
-Source: "D:\Payam Avarwand\My Repos\GitHub\Avarwand\Software\APC\installer\APC 2.4 Portable\_internal\*"; DestDir: "{app}\lib\_internal"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\Payam Avarwand\My Repos\GitHub\Avarwand\Software\APC\installer\APC 2.5 Portable\_internal\*"; DestDir: "{app}\lib\_internal"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 ; VBS launcher
