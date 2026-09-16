@@ -26,7 +26,8 @@ A **powerful, modern GUI tool** for **batch converting pictures** between 20 inp
 - **20 input formats**: standard, RAW camera, HDR/scientific, and game-texture pictures  
 - **7 output formats**: JPEG, PNG, BMP, WebP, TIFF, TGA, DDS  
 - **Import by click or drag & drop**, any mix of formats at once  
-- **Whole folders welcome**: dropped folders are searched to any depth, only the pictures inside are listed  
+- **Whole folders welcome**: dropped folders are searched to any depth, only the pictures inside are listed
+- **Hold the Folder Structure**: rebuilds the exact same subfolder layout in the output path, every picture keeps its place and its name, only the format changes
 - **Automatic format recognition** for every single file  
 - **File list with multi-select removal**: full control over what gets processed  
 - **Per-format counters** above the list: one click selects every picture of that format (Ctrl-click adds to the selection)  

@@ -6,7 +6,7 @@
 #define MyAppIcon "D:\Payam Avarwand\My Repos\GitHub\Word-Books\Code\Avarwand Software Production\15- APC\Visual\APC Logo.ico"
 #define MyVbsLauncher "APC_Launcher.vbs"
 #define MyAppIconName "APC Logo.ico"
-#define MyAppFileVersion "2.5.0.1"
+#define MyAppFileVersion "2.5.6.1"
 #define MyLicenseFile "D:\Payam Avarwand\My Repos\GitHub\Avarwand\Software\APC\installer\LICENSE.txt"
 
 [Setup]
