@@ -1,6 +1,6 @@
 <div align="center">
 
-# Avarwand Picture Converter 2.5.6
+# A Picture Converter 2.5.6
 
 </div>
 
