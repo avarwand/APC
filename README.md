@@ -65,8 +65,9 @@ The legally binding terms are in the [LICENSE](LICENSE.md) file.
 
 Suggestions and bug reports are welcome:
 
-📧 [avarwand@yahoo.com](mailto:avarwand@yahoo.com)
+📧 [avarwand@yahoo.com](mailto:avarwand@yahoo.com) <br>
 🌐 [github.com/avarwand](https://github.com/avarwand/)
 
 **Developed by Avarwand**
-© 2025–2026 Avarwand. All rights reserved.
+© 2025–2026 Avarwand Software <br>
+All rights reserved.
