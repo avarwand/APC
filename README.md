@@ -59,14 +59,15 @@ Full documentation is in the **[APC Wiki](https://github.com/avarwand/APC/wiki)*
 
 The legally binding terms are in the [LICENSE](LICENSE.md) file.
 
+
+**Initial Release:** Sepptember 2025 <br> 
+**Latest Update:** November 2026 (v2.5.7.14)
+
 ---
 
 ## Contact
 
-Suggestions and bug reports are welcome:
-
-📧 [avarwand@yahoo.com](mailto:avarwand@yahoo.com) <br>
+📧 [avarwand@yahoo.com](mailto:avarwand@yahoo.com)  
 🌐 [github.com/avarwand](https://github.com/avarwand/)
 
-**Developed by Avarwand** <br>
-© 2025–2026 Avarwand Software . All rights reserved.
+© 2025–2026 Avarwand. All rights reserved.
